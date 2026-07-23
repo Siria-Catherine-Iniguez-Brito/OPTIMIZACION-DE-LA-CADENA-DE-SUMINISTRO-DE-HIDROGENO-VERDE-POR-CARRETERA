@@ -1,0 +1,28 @@
+# =====================================================================
+# Requisitos del proyecto TFM
+# "Optimizacion de la Cadena de Suministro de Hidrogeno Verde por Carretera"
+# ---------------------------------------------------------------------
+# Instalacion recomendada (entorno virtual):
+#     python -m venv .venv
+#     source .venv/bin/activate        (Linux/Mac)
+#     .venv\Scripts\activate           (Windows)
+#     pip install -r requirements.txt
+# =====================================================================
+
+# --- Optimizacion exacta del Nivel 1 (localizacion + flujo directo) ---
+# PuLP trae incluido el solver CBC (COIN-OR), no requiere instalacion aparte.
+pulp>=2.7,<3.0
+
+# --- Calculo numerico y manejo de datos ---
+numpy>=1.24
+pandas>=2.0
+
+# --- Graficas de convergencia y figuras para la memoria ---
+matplotlib>=3.7
+
+# --- Utilidades opcionales ---
+# Barra de progreso en el bucle del algoritmo genetico (opcional).
+tqdm>=4.65
+
+# Lectura de configuracion de experimentos en YAML (config.yaml).
+PyYAML>=6.0

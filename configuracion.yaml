@@ -1,0 +1,60 @@
+# =====================================================================
+#  configuracion.yaml - Configuracion de un experimento
+#  TFM "Optimizacion de la Cadena de Suministro de Hidrogeno Verde por Carretera"
+# ---------------------------------------------------------------------
+#  Este fichero reune TODOS los parametros de una ejecucion en un solo
+#  lugar, separados del codigo. Editalo para cambiar de instancia, de
+#  hiperparametros o de experimento SIN tocar los .py.
+#
+#  Uso:   python main.py                 (usa configuracion.yaml)
+#         python main.py otro_config.yaml (usa otro fichero)
+# =====================================================================
+
+# --- Instancia a resolver (ruta relativa a la raiz del proyecto) ---
+instancia: DATOS/instancia_small.json
+
+# --- Que ejecutar: "calibracion" | "comparativo" | "una_ejecucion" ---
+modo: comparativo
+
+# --- Hiperparametros del algoritmo genetico ---
+algoritmo_genetico:
+  tam_poblacion: 40
+  n_generaciones: 120       # criterio de parada por generaciones
+  tiempo_max: null          # o un numero de segundos; si se indica, tiene prioridad
+  prob_cruce: 0.9
+  prob_mutacion: 0.2
+  k_torneo: 3
+  elitismo: true
+
+# --- Parametros del experimento comparativo (modo: comparativo) ---
+comparativo:
+  estrategias: [A, B, C]    # A aleatoria | B semilla N1 | C mixta
+  frac_semilla: 0.5         # proporcion de tipo B en la estrategia C
+  semillas: [1, 2, 3, 4, 5] # una replica por semilla
+  tam_pool_n1: 5            # nº de soluciones del pool del Nivel 1 para B y C
+
+# --- Parametros del Nivel 1 (solver exacto) ---
+nivel1:
+  estrategia_pool: perturbacion   # "perturbacion" | "kbest"
+  sigma_perturbacion: 0.15        # intensidad del ruido en costes (solo perturbacion)
+  k_best: 5                       # nº de soluciones (solo kbest)
+
+# --- Malla de calibracion (modo: calibracion) ---
+calibracion:
+  tam_poblacion: [20, 40, 60]
+  prob_cruce: [0.8, 0.9]
+  prob_mutacion: [0.1, 0.2, 0.3]
+  k_torneo: [2, 3]
+  n_generaciones: 80
+  semillas: [1, 2, 3, 4, 5]
+
+# --- Parametros de una sola ejecucion (modo: una_ejecucion) ---
+una_ejecucion:
+  tipo_init: C              # A | B | C
+  frac_semilla: 0.5
+  semilla: 42
+
+# --- Salida ---
+salida:
+  dir_tablas: RESULTADOS/tablas
+  dir_figuras: RESULTADOS/figuras
