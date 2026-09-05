@@ -51,7 +51,7 @@ def cronometro(etiqueta: str = "", silencioso: bool = True):
 
 
 # ---------------------------------------------------------------------------
-# Estadistica descriptiva simple (sin dependencias)
+# Estadistica descriptiva simple 
 # ---------------------------------------------------------------------------
 def media(xs: List[float]) -> float:
     return sum(xs) / len(xs) if xs else float("nan")

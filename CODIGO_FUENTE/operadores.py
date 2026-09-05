@@ -6,7 +6,7 @@ Operadores del algoritmo genetico, adaptados a la codificacion por rutas
 (cromosoma.py) del problema global del TFM "Optimizacion de la Cadena de
 Suministro de Hidrogeno Verde por Carretera".
 
-Componentes (siguiendo el esquema de la Seccion de Algoritmos Geneticos):
+Componentes:
 
   - SELECCION : torneo deterministico de tamano k (se eligen k individuos al azar
                 y gana el de mejor fitness).

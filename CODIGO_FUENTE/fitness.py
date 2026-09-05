@@ -5,7 +5,7 @@ fitness.py
 Evaluacion de una solucion (cromosoma) del problema global del TFM "Optimizacion
 de la Cadena de Suministro de Hidrogeno Verde por Carretera".
 
-La funcion de FITNESS combina dos terminos (enfoque hibrido acordado):
+La funcion de FITNESS combina dos terminos:
 
     fitness(x) = COSTE_TOTAL(x)  +  PENALIZACION(x)
 

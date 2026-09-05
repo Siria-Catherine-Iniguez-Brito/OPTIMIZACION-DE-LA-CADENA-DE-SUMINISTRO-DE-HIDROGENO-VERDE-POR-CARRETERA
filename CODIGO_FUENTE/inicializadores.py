@@ -91,13 +91,18 @@ class Inicializador:
         for j, p in sol.asignacion.items():
             clusters.setdefault(p, []).append(j)
 
-        modo_barato = min(inst.M, key=lambda m: inst.modos[m].coste_por_km)
         rutas: List[Ruta] = []
         for p, cs in clusters.items():
             orden = list(cs)
             if perturbar_orden:
                 self.rng.shuffle(orden)
-            rutas.append(Ruta(p, modo_barato, orden))
+            # Modo inicial: el mas barato por km que ADMITA al cliente mas grande
+            # del grupo.
+            dem_max = max(inst.Dem[j] for j in cs)
+            modos_validos = [m for m in inst.M if inst.modos[m].CapV >= dem_max]
+            modo = min(modos_validos or inst.M,
+                   key=lambda m: inst.modos[m].coste_por_km)
+            rutas.append(Ruta(p, modo, orden))
         return self.rep.reparar(Cromosoma(rutas))
 
     # ==================================================================
