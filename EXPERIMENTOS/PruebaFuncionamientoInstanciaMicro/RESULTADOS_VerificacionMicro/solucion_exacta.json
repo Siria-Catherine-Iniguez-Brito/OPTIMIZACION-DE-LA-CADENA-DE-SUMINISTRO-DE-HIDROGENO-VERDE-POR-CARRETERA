@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "objetivo": 24572.044477999993,
+  "abiertas": [
+    "pl_a"
+  ],
+  "rutas": [
+    {
+      "planta": "pl_a",
+      "modo": "liquido",
+      "clientes": [
+        "cli_4",
+        "cli_3",
+        "cli_2"
+      ]
+    },
+    {
+      "planta": "pl_a",
+      "modo": "comprimido",
+      "clientes": [
+        "cli_5"
+      ]
+    },
+    {
+      "planta": "pl_a",
+      "modo": "comprimido",
+      "clientes": [
+        "cli_1"
+      ]
+    }
+  ]
+}

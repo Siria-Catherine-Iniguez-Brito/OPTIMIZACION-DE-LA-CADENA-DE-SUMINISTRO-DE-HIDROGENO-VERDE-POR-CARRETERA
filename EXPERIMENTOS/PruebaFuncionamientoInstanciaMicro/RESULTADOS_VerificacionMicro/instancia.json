@@ -1,0 +1,26 @@
+{
+  "ruta_instancia": "/content/drive/MyDrive/TFM/DATOS/Tablas/instancia_micro.json",
+  "P": [
+    "pl_a",
+    "pl_b",
+    "pl_c"
+  ],
+  "J": [
+    "cli_1",
+    "cli_2",
+    "cli_3",
+    "cli_4",
+    "cli_5"
+  ],
+  "K": [
+    "k1",
+    "k2",
+    "k3",
+    "k4"
+  ],
+  "M": [
+    "comprimido",
+    "liquido",
+    "amoniaco"
+  ]
+}
