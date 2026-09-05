@@ -1,0 +1,7 @@
+instancia,timeout_etiqueta,P,J,K,HTotal,timeout_s,gap_aceptado,estado_solver,optimo_certificado,tiene_solucion_factible,coste_total_UB,coste_total_LB,lcoh_UB,lcoh_LB,gap_final,tiempo_s_real,n_variables,n_restricciones
+small,1h,4,8,16,22400.0,3600.0,0.0,Not Solved,False,False,,,,,,3597.722687244416,10596,8684
+small,30min,4,8,16,22400.0,1800.0,0.0,Not Solved,False,False,,,,,,1796.777123451233,10596,8684
+small,15min,4,8,16,22400.0,900.0,0.0,Not Solved,False,False,,,,,,897.939909696579,10596,8684
+medium,15min,8,18,34,38600.0,900.0,0.0,Not Solved,False,False,,,,,,974.3609726428986,108932,84322
+medium,30min,8,18,34,38600.0,1800.0,0.0,Not Solved,False,False,,,,,,1768.659679889679,108932,84322
+medium,1h,8,18,34,38600.0,3600.0,0.0,Not Solved,False,False,,,,,,5319.690043210983,108932,84322
