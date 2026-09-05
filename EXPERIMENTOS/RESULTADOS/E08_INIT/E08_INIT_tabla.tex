@@ -1,0 +1,30 @@
+\begin{table}[H]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.25}
+    \begin{tabular}{lllrrrr}
+        \hline
+        \textbf{Instancia} & \textbf{Configuración} & \textbf{Factibles} & \textbf{LCOH medio} & \textbf{Desv. típica} & \textbf{LCOH mejor} & \textbf{t medio (s)} \\
+        \hline
+        \textbf{small} & \textbf{init=A\_frac=0.25} & \textbf{20/20} & \textbf{4,6016} & \textbf{0,0088} & \textbf{4,5892} & \textbf{8,4} \\
+        small & init=B\_frac=0.25 & 20/20 & 4,6046 & 0,0000 & 4,6046 & 8,4 \\
+        small & init=C\_frac=0.25 & 20/20 & 4,6046 & 0,0000 & 4,6046 & 8,2 \\
+        small & init=C\_frac=0.5 & 20/20 & 4,6046 & 0,0000 & 4,6046 & 8,3 \\
+        small & init=C\_frac=0.75 & 20/20 & 4,6038 & 0,0034 & 4,5892 & 8,4 \\
+        \hline
+        medium & init=A\_frac=0.25 & 20/20 & 4,5354 & 0,1184 & 4,3572 & 15,4 \\
+        medium & init=B\_frac=0.25 & 20/20 & 4,3720 & 0,0518 & 4,3146 & 16,4 \\
+        medium & init=C\_frac=0.25 & 20/20 & 4,3578 & 0,0456 & 4,3149 & 15,6 \\
+        medium & init=C\_frac=0.5 & 20/20 & 4,3741 & 0,0518 & 4,3146 & 15,1 \\
+        \textbf{medium} & \textbf{init=C\_frac=0.75} & \textbf{20/20} & \textbf{4,3549} & \textbf{0,0370} & \textbf{4,3146} & \textbf{15,3} \\
+        \hline
+        large & init=A\_frac=0.25 & 20/20 & 4,6724 & 0,0585 & 4,5165 & 23,5 \\
+        large & init=B\_frac=0.25 & 20/20 & 4,4452 & 0,0480 & 4,3514 & 23,6 \\
+        large & init=C\_frac=0.25 & 20/20 & 4,4669 & 0,0969 & 4,3544 & 23,7 \\
+        \textbf{large} & \textbf{init=C\_frac=0.5} & \textbf{20/20} & \textbf{4,4373} & \textbf{0,0345} & \textbf{4,3540} & \textbf{23,6} \\
+        large & init=C\_frac=0.75 & 20/20 & 4,4509 & 0,0887 & 4,3252 & 23,7 \\
+        \hline
+    \end{tabular}
+    \caption{Resultados de la estudio de las estrategias de inicializacion de la poblacion. El LCOH medio se calcula sobre las ejecuciones factibles; la columna \textbf{Factibles} indica cuántas de las ejecuciones totales alcanzaron una solución factible. En negrita, la mejor configuración de cada instancia.}
+    \label{tab:calib_e08_init}
+\end{table}

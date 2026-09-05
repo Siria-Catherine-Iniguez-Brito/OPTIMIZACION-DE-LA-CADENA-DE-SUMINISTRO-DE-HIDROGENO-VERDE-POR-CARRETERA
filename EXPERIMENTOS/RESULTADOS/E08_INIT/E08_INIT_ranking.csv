@@ -1,0 +1,6 @@
+exp_id,id_config,n_instancias,veces_mejor,veces_mejor_txt,mejor_en,tasa_factibilidad_global,rank_medio,tiempo_medio_s,n_instancias_sin_factibles,decision
+E08_INIT,init=C_frac=0.75,3,1,1/3,medium,1.0,2.0,15.790011102916772,0,<- mas veces mejor
+E08_INIT,init=C_frac=0.5,3,1,1/3,large,1.0,3.0,15.673305082033464,0,
+E08_INIT,init=A_frac=0.25,3,1,1/3,small,1.0,3.6666666666666665,15.756857399799992,0,
+E08_INIT,init=C_frac=0.25,3,0,0/3,-,1.0,3.0,15.850889772649921,0,
+E08_INIT,init=B_frac=0.25,3,0,0/3,-,1.0,3.3333333333333335,16.11478018415031,0,

@@ -1,0 +1,27 @@
+\begin{table}[H]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.25}
+    \begin{tabular}{lllrrrr}
+        \hline
+        \textbf{Instancia} & \textbf{Configuración} & \textbf{Factibles} & \textbf{LCOH medio} & \textbf{Desv. típica} & \textbf{LCOH mejor} & \textbf{t medio (s)} \\
+        \hline
+        small & NxG=20x400 & 20/20 & 4,6054 & 0,0025 & 4,6046 & 1,3 \\
+        small & NxG=40x200 & 20/20 & 4,6050 & 0,0019 & 4,6046 & 1,2 \\
+        \textbf{small} & \textbf{NxG=80x100} & \textbf{20/20} & \textbf{4,6038} & \textbf{0,0034} & \textbf{4,5892} & \textbf{1,3} \\
+        small & NxG=160x50 & 20/20 & 4,6046 & 0,0000 & 4,6046 & 1,3 \\
+        \hline
+        medium & NxG=20x400 & 20/20 & 4,4130 & 0,0653 & 4,3127 & 2,4 \\
+        medium & NxG=40x200 & 20/20 & 4,3916 & 0,0577 & 4,3146 & 2,3 \\
+        \textbf{medium} & \textbf{NxG=80x100} & \textbf{20/20} & \textbf{4,3756} & \textbf{0,0468} & \textbf{4,3235} & \textbf{2,4} \\
+        medium & NxG=160x50 & 20/20 & 4,4348 & 0,0521 & 4,3420 & 2,4 \\
+        \hline
+        \textbf{large} & \textbf{NxG=20x400} & \textbf{20/20} & \textbf{4,4796} & \textbf{0,0377} & \textbf{4,4316} & \textbf{3,7} \\
+        large & NxG=40x200 & 20/20 & 4,5090 & 0,0576 & 4,4236 & 3,6 \\
+        large & NxG=80x100 & 20/20 & 4,5262 & 0,0581 & 4,4150 & 3,6 \\
+        large & NxG=160x50 & 20/20 & 4,6057 & 0,0542 & 4,5175 & 3,5 \\
+        \hline
+    \end{tabular}
+    \caption{Resultados de la comparacion a presupuesto computacional constante (n x g = cte). El LCOH medio se calcula sobre las ejecuciones factibles; la columna \textbf{Factibles} indica cuántas de las ejecuciones totales alcanzaron una solución factible. En negrita, la mejor configuración de cada instancia.}
+    \label{tab:calib_e10_presup}
+\end{table}

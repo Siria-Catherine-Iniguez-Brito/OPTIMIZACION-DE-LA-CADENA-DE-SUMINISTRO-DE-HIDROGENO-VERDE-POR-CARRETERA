@@ -1,0 +1,5 @@
+exp_id,id_config,n_instancias,veces_mejor,veces_mejor_txt,mejor_en,tasa_factibilidad_global,rank_medio,tiempo_medio_s,n_instancias_sin_factibles,decision
+E10_PRESUP,NxG=80x100,3,2,2/3,"medium, small",1.0,1.6666666666666667,2.4266576113166596,0,<- mas veces mejor
+E10_PRESUP,NxG=20x400,3,1,1/3,large,1.0,2.6666666666666665,2.4509257603499996,0,
+E10_PRESUP,NxG=40x200,3,0,0/3,-,1.0,2.3333333333333335,2.3997305978499828,0,
+E10_PRESUP,NxG=160x50,3,0,0/3,-,1.0,3.3333333333333335,2.4190105509500124,0,
