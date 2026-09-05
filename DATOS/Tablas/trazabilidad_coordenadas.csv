@@ -1,0 +1,46 @@
+clase,id,nombre,provincia,consulta_nominatim,lat,lon,fuente,fecha_consulta
+planta,pl_andalu,Planta H2 Andalucia (solar),Sevilla,"Sevilla, Espana",37.3886,-5.9953,Nominatim / OpenStreetMap,2026-09-02
+planta,pl_extrem,Planta H2 Extremadura (solar),Badajoz,"Badajoz, Espana",39.0406,-5.2338,Nominatim / OpenStreetMap,2026-09-02
+planta,pl_castlm,Planta H2 Castilla-LM (solar),Ciudad Real,"Ciudad Real, Espana",39.3912,-3.2087,Nominatim / OpenStreetMap,2026-09-02
+planta,pl_aragon,Planta H2 Aragon (eolico/solar),Zaragoza,"Zaragoza, Espana",41.6916,-0.9101,Nominatim / OpenStreetMap,2026-09-02
+planta,pl_murcia,Planta H2 Murcia (solar),Murcia,"Lorca, Murcia, Espana",37.6952,-1.7723,Nominatim / OpenStreetMap,2026-09-02
+planta,pl_cataluna,Planta H2 Tarragona (mixto),Tarragona,"Reus, Tarragona, Espana",41.1556,1.1076,Nominatim / OpenStreetMap,2026-09-02
+planta,pl_valencia,Planta H2 C. Valenciana (solar),Valencia,"Requena, Valencia, Espana",39.4881,-1.1002,Nominatim / OpenStreetMap,2026-09-02
+planta,pl_castleon,Planta H2 Castilla-Leon (eolico),Palencia,"Palencia, Espana",42.4096,-4.6161,Nominatim / OpenStreetMap,2026-09-02
+planta,pl_navarra,Planta H2 Navarra (eolico),Navarra,"Tudela, Navarra, Espana",42.0783,-1.6387,Nominatim / OpenStreetMap,2026-09-02
+planta,pl_galicia,Planta H2 Galicia (eolico),A Coruna,"Ordes, A Coruna, Espana",43.0853,-8.4015,Nominatim / OpenStreetMap,2026-09-02
+planta,pl_asturias,Planta H2 Asturias (eolico),Asturias,"Tineo, Asturias, Espana",43.3093,-6.492,Nominatim / OpenStreetMap,2026-09-02
+planta,pl_cadiz,Planta H2 Cadiz (eolico/solar),Cadiz,"Jerez de la Frontera, Cadiz, Espana",36.6817,-6.1377,Nominatim / OpenStreetMap,2026-09-02
+planta,pl_huelva,Planta H2 Huelva (solar),Huelva,"Huelva, Espana",37.2576,-6.9485,Nominatim / OpenStreetMap,2026-09-02
+planta,pl_almeria,Planta H2 Almeria (solar),Almeria,"Tabernas, Almeria, Espana",37.0499,-2.3914,Nominatim / OpenStreetMap,2026-09-02
+planta,pl_teruel,Planta H2 Teruel (solar/eolico),Teruel,"Teruel, Espana",40.6005,-0.9229,Nominatim / OpenStreetMap,2026-09-02
+cliente,ref_corunya,Refineria A Coruna (Repsol),A Coruna,"A Coruna, Espana",43.3466,-8.4127,Nominatim / OpenStreetMap,2026-09-02
+cliente,ref_bilbao,Refineria Petronor (Muskiz),Vizcaya,"Muskiz, Vizcaya, Espana",43.323,-3.1243,Nominatim / OpenStreetMap,2026-09-02
+cliente,ref_tarrag,Refineria Tarragona (Repsol),Tarragona,"Tarragona, Espana",41.1172,1.2546,Nominatim / OpenStreetMap,2026-09-02
+cliente,ref_castell,Refineria Castellon (BP),Castellon,"Castellon de la Plana, Espana",39.986,-0.0377,Nominatim / OpenStreetMap,2026-09-02
+cliente,ref_cartag,Refineria Cartagena (Repsol),Murcia,"Cartagena, Murcia, Espana",37.6155,-0.9875,Nominatim / OpenStreetMap,2026-09-02
+cliente,ref_huelva,Refineria La Rabida (Moeve),Huelva,"Palos de la Frontera, Huelva, Espana",37.2277,-6.8954,Nominatim / OpenStreetMap,2026-09-02
+cliente,ref_algecir,Refineria San Roque (Moeve),Cadiz,"San Roque, Cadiz, Espana",36.2101,-5.3868,Nominatim / OpenStreetMap,2026-09-02
+cliente,ref_puertoll,Refineria Puertollano (Repsol),Ciudad Real,"Puertollano, Ciudad Real, Espana",38.6852,-4.1112,Nominatim / OpenStreetMap,2026-09-02
+cliente,qui_tarrag,Petroquimica Tarragona,Tarragona,"Tarragona, Espana",41.1172,1.2546,Nominatim / OpenStreetMap,2026-09-02
+cliente,qui_huelva,Polo quimico Huelva,Huelva,"Palos de la Frontera, Huelva, Espana",37.2277,-6.8954,Nominatim / OpenStreetMap,2026-09-02
+cliente,qui_puertoll,Complejo quimico Puertollano,Ciudad Real,"Puertollano, Ciudad Real, Espana",38.6852,-4.1112,Nominatim / OpenStreetMap,2026-09-02
+cliente,fer_palos,Fertilizantes Palos (Huelva),Huelva,"Palos de la Frontera, Huelva, Espana",37.2277,-6.8954,Nominatim / OpenStreetMap,2026-09-02
+cliente,fer_sagunto,Fertilizantes Sagunto,Valencia,"Sagunto, Valencia, Espana",39.6793,-0.2786,Nominatim / OpenStreetMap,2026-09-02
+cliente,sid_gijon,Siderurgia Gijon-Verina,Asturias,"Gijon, Asturias, Espana",43.5449,-5.6627,Nominatim / OpenStreetMap,2026-09-02
+cliente,sid_sagunto,Siderurgia Sagunto,Valencia,"Sagunto, Valencia, Espana",39.6793,-0.2786,Nominatim / OpenStreetMap,2026-09-02
+cliente,sid_bilbao,Siderurgia Sestao (Bizkaia),Vizcaya,"Sestao, Vizcaya, Espana",43.3093,-3.0075,Nominatim / OpenStreetMap,2026-09-02
+cliente,qui_cartag,Quimica Escombreras Cartagena,Murcia,"Cartagena, Murcia, Espana",37.6155,-0.9875,Nominatim / OpenStreetMap,2026-09-02
+cliente,qui_tarrag2,Quimica Sur Tarragona,Tarragona,"Vila-seca, Tarragona, Espana",41.1109,1.145,Nominatim / OpenStreetMap,2026-09-02
+cliente,ind_valencia,Industria Valencia,Valencia,"Valencia, Espana",39.4658,-0.3818,Nominatim / OpenStreetMap,2026-09-02
+cliente,ind_barna,Industria Barcelona (Zona F.),Barcelona,"Barcelona, Espana",41.3826,2.1771,Nominatim / OpenStreetMap,2026-09-02
+cliente,ind_zaragoza,Industria Zaragoza,Zaragoza,"Zaragoza, Espana",41.6916,-0.9101,Nominatim / OpenStreetMap,2026-09-02
+cliente,ind_sevilla,Industria Sevilla,Sevilla,"Sevilla, Espana",37.3886,-5.9953,Nominatim / OpenStreetMap,2026-09-02
+cliente,ind_madrid,Industria Madrid (Sur),Madrid,"Getafe, Madrid, Espana",40.3071,-3.7332,Nominatim / OpenStreetMap,2026-09-02
+cliente,ind_valladol,Industria Valladolid,Valladolid,"Valladolid, Espana",41.62,-4.726,Nominatim / OpenStreetMap,2026-09-02
+cliente,ind_gijon,Industria Aviles (Asturias),Asturias,"Aviles, Asturias, Espana",43.5555,-5.9222,Nominatim / OpenStreetMap,2026-09-02
+cliente,ind_cadiz,Industria Bahia de Cadiz,Cadiz,"Puerto Real, Cadiz, Espana",36.5287,-6.1902,Nominatim / OpenStreetMap,2026-09-02
+cliente,ind_almeria,Industria Almeria,Almeria,"Almeria, Espana",36.8686,-2.312,Nominatim / OpenStreetMap,2026-09-02
+cliente,ind_murcia,Industria Murcia,Murcia,"Murcia, Espana",37.9348,-1.1131,Nominatim / OpenStreetMap,2026-09-02
+cliente,ind_alicante,Industria Alicante,Alicante,"Alicante, Espana",38.7085,-0.4655,Nominatim / OpenStreetMap,2026-09-02
+cliente,ind_leon,Industria Leon,Leon,"Leon, Espana",42.6341,-5.9714,Nominatim / OpenStreetMap,2026-09-02

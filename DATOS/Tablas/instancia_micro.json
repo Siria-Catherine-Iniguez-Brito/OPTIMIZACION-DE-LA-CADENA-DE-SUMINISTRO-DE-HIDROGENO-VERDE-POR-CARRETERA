@@ -1,0 +1,312 @@
+{
+  "meta": {
+    "nombre": "instancia_micro",
+    "descripcion": "3 plantas, 5 clientes, 4 camiones, 3 modos - instancia sintetica micro para validacion exacta",
+    "T": 24,
+    "fuente_distancias": "matriz_real",
+    "fuentes": {
+      "coordenadas": "aproximadas (instancia sintetica de prueba)",
+      "distancias": "haversine * 1.25 (aproximacion sintetica, NO OSRM real)",
+      "renovable": "perfil solar/mixto sintetico",
+      "demanda_y_costes": "valores sinteticos disenados para forzar consolidacion de rutas y uso de varios modos de transporte"
+    }
+  },
+  "conjuntos": {
+    "P": [
+      "pl_a",
+      "pl_b",
+      "pl_c"
+    ],
+    "J": [
+      "cli_1",
+      "cli_2",
+      "cli_3",
+      "cli_4",
+      "cli_5"
+    ],
+    "K": [
+      "k1",
+      "k2",
+      "k3",
+      "k4"
+    ],
+    "M": [
+      "comprimido",
+      "liquido",
+      "amoniaco"
+    ]
+  },
+  "plantas": {
+    "pl_a": {
+      "nombre": "Planta H2 Sevilla (solar alto)",
+      "provincia": "Sevilla",
+      "zona_recurso": "solar_alto",
+      "Fijo": 5200.0,
+      "CosteO": 2.6,
+      "Cap": 1300.0,
+      "Ren": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        369.2308,
+        676.9231,
+        923.0769,
+        1107.6923,
+        1230.7692,
+        1292.3077,
+        1292.3077,
+        1230.7692,
+        1107.6923,
+        923.0769,
+        676.9231,
+        369.2308,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "pl_b": {
+      "nombre": "Planta H2 Ciudad Real (solar medio)",
+      "provincia": "Ciudad Real",
+      "zona_recurso": "solar_medio",
+      "Fijo": 5600.0,
+      "CosteO": 2.9,
+      "Cap": 1100.0,
+      "Ren": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        312.426,
+        572.7811,
+        781.0651,
+        937.2781,
+        1041.4201,
+        1093.4911,
+        1093.4911,
+        1041.4201,
+        937.2781,
+        781.0651,
+        572.7811,
+        312.426,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "pl_c": {
+      "nombre": "Planta H2 Zaragoza (mixto)",
+      "provincia": "Zaragoza",
+      "zona_recurso": "mixto",
+      "Fijo": 5500.0,
+      "CosteO": 2.8,
+      "Cap": 1250.0,
+      "Ren": [
+        386.4128,
+        421.3162,
+        437.1105,
+        429.5635,
+        400.6976,
+        358.2473,
+        313.5872,
+        509.453,
+        685.9665,
+        847.3596,
+        991.6101,
+        1110.9835,
+        1194.1052,
+        1229.0085,
+        1206.3412,
+        1121.8712,
+        977.6207,
+        781.3242,
+        544.3564,
+        278.6838,
+        262.8895,
+        270.4365,
+        299.3024,
+        341.7527
+      ]
+    }
+  },
+  "clientes": {
+    "cli_1": {
+      "nombre": "Cliente Madrid",
+      "provincia": "Madrid",
+      "tipo": "quimica",
+      "Dem": 700.0
+    },
+    "cli_2": {
+      "nombre": "Cliente Valencia",
+      "provincia": "Valencia",
+      "tipo": "quimica",
+      "Dem": 800.0
+    },
+    "cli_3": {
+      "nombre": "Cliente Barcelona",
+      "provincia": "Barcelona",
+      "tipo": "refineria",
+      "Dem": 1400.0
+    },
+    "cli_4": {
+      "nombre": "Cliente Bilbao",
+      "provincia": "Vizcaya",
+      "tipo": "siderurgia",
+      "Dem": 900.0
+    },
+    "cli_5": {
+      "nombre": "Cliente Cadiz",
+      "provincia": "Cadiz",
+      "tipo": "quimica",
+      "Dem": 600.0
+    }
+  },
+  "modos": {
+    "comprimido": {
+      "CapV": 1100.0,
+      "Efi": 0.94,
+      "coste_por_km": 1.05
+    },
+    "liquido": {
+      "CapV": 3500.0,
+      "Efi": 0.82,
+      "coste_por_km": 1.85
+    },
+    "amoniaco": {
+      "CapV": 8000.0,
+      "Efi": 0.72,
+      "coste_por_km": 1.55
+    }
+  },
+  "coordenadas": {
+    "pl_a": [
+      37.3886,
+      -5.9953
+    ],
+    "pl_b": [
+      38.9848,
+      -3.9269
+    ],
+    "pl_c": [
+      41.6488,
+      -0.8891
+    ],
+    "cli_1": [
+      40.4168,
+      -3.7038
+    ],
+    "cli_2": [
+      39.4699,
+      -0.3763
+    ],
+    "cli_3": [
+      41.3874,
+      2.1686
+    ],
+    "cli_4": [
+      43.263,
+      -2.935
+    ],
+    "cli_5": [
+      36.5271,
+      -6.2886
+    ]
+  },
+  "matriz_distancias": {
+    "_comentario": "km aproximados (haversine*1.25); instancia SINTETICA, no real.",
+    "unidad": "km",
+    "valores": {
+      "pl_a": {
+        "pl_a": 0.0,
+        "pl_b": 316.661,
+        "pl_c": 806.155,
+        "cli_1": 488.415,
+        "cli_2": 676.593,
+        "cli_3": 1037.582,
+        "cli_4": 878.374,
+        "cli_5": 124.095
+      },
+      "pl_b": {
+        "pl_a": 316.661,
+        "pl_b": 0.0,
+        "pl_c": 490.598,
+        "cli_1": 200.464,
+        "cli_2": 388.168,
+        "cli_3": 728.076,
+        "cli_4": 603.631,
+        "cli_5": 428.974
+      },
+      "pl_c": {
+        "pl_a": 806.155,
+        "pl_b": 490.598,
+        "pl_c": 0.0,
+        "cli_1": 341.171,
+        "cli_2": 307.655,
+        "cli_3": 320.268,
+        "cli_4": 307.157,
+        "cli_5": 919.422
+      },
+      "cli_1": {
+        "pl_a": 488.415,
+        "pl_b": 200.464,
+        "pl_c": 341.171,
+        "cli_1": 0.0,
+        "cli_2": 378.197,
+        "cli_3": 631.37,
+        "cli_4": 403.53,
+        "cli_5": 609.361
+      },
+      "cli_2": {
+        "pl_a": 676.593,
+        "pl_b": 388.168,
+        "pl_c": 307.655,
+        "cli_1": 378.197,
+        "cli_2": 0.0,
+        "cli_3": 378.825,
+        "cli_4": 590.853,
+        "cli_5": 765.678
+      },
+      "cli_3": {
+        "pl_a": 1037.582,
+        "pl_b": 728.076,
+        "pl_c": 320.268,
+        "cli_1": 631.37,
+        "cli_2": 378.825,
+        "cli_3": 0.0,
+        "cli_4": 585.538,
+        "cli_5": 1135.711
+      },
+      "cli_4": {
+        "pl_a": 878.374,
+        "pl_b": 603.631,
+        "pl_c": 307.157,
+        "cli_1": 403.53,
+        "cli_2": 590.853,
+        "cli_3": 585.538,
+        "cli_4": 0.0,
+        "cli_5": 1001.991
+      },
+      "cli_5": {
+        "pl_a": 124.095,
+        "pl_b": 428.974,
+        "pl_c": 919.422,
+        "cli_1": 609.361,
+        "cli_2": 765.678,
+        "cli_3": 1135.711,
+        "cli_4": 1001.991,
+        "cli_5": 0.0
+      }
+    }
+  }
+}

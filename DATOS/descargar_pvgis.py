@@ -59,10 +59,11 @@ def perfil_pvgis(lat: float, lon: float, pico_kwp: float = 1000.0,
 
 
 def perfil_sintetico(zona: str, cap_kg_h: float, semilla: int = 0) -> List[float]:
-    """Fallback: curva diaria realista de 24 h (kg H2/h) parametrizada por zona.
+    """Curva diaria caracteristica de 24 h (kg H2/h) por tipo de recurso.
       - solar : campana centrada en el mediodia solar, cero por la noche.
-      - eolico: base mas plana con repunte tarde-noche.
-      - mixto : combinacion de ambas.
+      - eolico: perfil PLANO y distribuido, con recurso tambien de noche y un
+                ligero repunte nocturno/madrugada (tipico del viento peninsular).
+      - mixto : combinacion de la campana solar y la base eolica.
     El pico se escala a una fraccion de la capacidad cap_kg_h de la planta."""
     import random
     rng = random.Random(semilla)
@@ -72,23 +73,41 @@ def perfil_sintetico(zona: str, cap_kg_h: float, semilla: int = 0) -> List[float
             base = max(0.0, math.sin(math.pi * (t - 6) / 14)) if 6 <= t <= 20 else 0.0
             factor = 0.95 if zona == "solar_alto" else 0.75
         elif zona == "eolico":
-            base = max(0.0, 0.45 + 0.35 * math.sin(math.pi * (t - 2) / 12))
-            factor = 0.8
+            # Base alta y constante (el viento sopla dia y noche) con un leve
+            # ciclo diario: minimo hacia el mediodia, repunte tarde-noche/madrugada.
+            base = 0.70 + 0.20 * math.cos(2 * math.pi * (t - 3) / 24)
+            factor = 0.85
         else:  # mixto
             solar = max(0.0, math.sin(math.pi * (t - 6) / 14)) if 6 <= t <= 20 else 0.0
-            eol = max(0.0, 0.4 + 0.3 * math.sin(math.pi * (t - 2) / 12))
-            base = 0.6 * solar + 0.4 * eol
+            eol = 0.55 + 0.20 * math.cos(2 * math.pi * (t - 3) / 24)
+            base = 0.55 * solar + 0.45 * eol
             factor = 0.85
-        ruido = 1.0 + rng.uniform(-0.06, 0.06)
+        ruido = 1.0 + rng.uniform(-0.05, 0.05)
         perfil.append(round(cap_kg_h * factor * base * ruido, 4))
     return perfil
 
 
 def construir_perfil(lat: float, lon: float, zona: str, cap_kg_h: float,
                      fuente: str = "pvgis", semilla: int = 0) -> List[float]:
-    """Punto de entrada: fuente = 'pvgis' (real) | 'sintetico' (fallback).
-    Con PVGIS, el perfil se reescala para que el pico coincida con la capacidad
-    instalada de la planta. Si PVGIS falla, cae al fallback sintetico."""
+    """Punto de entrada. El perfil depende del RECURSO de la zona:
+
+      - SOLAR (solar_alto / solar_medio): perfil real de PVGIS (fotovoltaica),
+        reescalado para que el pico coincida con la capacidad instalada. Si PVGIS
+        falla o fuente='sintetico', cae a la curva solar caracteristica.
+      - EOLICO: PVGIS NO aporta recurso eolico (solo fotovoltaica), por lo que
+        SIEMPRE se usa la curva caracteristica eolica: mas plana y con recurso
+        tambien de noche. Nunca se llama a PVGIS para estas plantas.
+      - MIXTO: curva caracteristica mixta (combinacion solar + eolico), coherente
+        con un emplazamiento que aprovecha ambos recursos.
+
+    Este reparto evita el error de asignar un perfil solar a una planta eolica
+    (que ocurriria si se pidiese la fotovoltaica de PVGIS para cualquier zona).
+    """
+    # Eolico y mixto: curva caracteristica, no dependen de PVGIS.
+    if zona == "eolico" or zona == "mixto":
+        return perfil_sintetico(zona, cap_kg_h, semilla)
+
+    # Solar (solar_alto / solar_medio): PVGIS real, con fallback sintetico.
     if fuente == "pvgis":
         try:
             perfil = perfil_pvgis(lat, lon)

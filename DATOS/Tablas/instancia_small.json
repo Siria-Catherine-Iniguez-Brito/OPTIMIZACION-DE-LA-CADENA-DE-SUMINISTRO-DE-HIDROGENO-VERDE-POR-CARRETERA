@@ -1,0 +1,484 @@
+{
+  "meta": {
+    "nombre": "instancia_small",
+    "descripcion": "4 plantas, 8 clientes, 3 modos",
+    "T": 24,
+    "fuente_distancias": "matriz_real",
+    "fuentes": {
+      "coordenadas": "Nominatim / OpenStreetMap",
+      "distancias": "OSRM sobre OpenStreetMap",
+      "renovable": "PVGIS (JRC, Comision Europea)",
+      "demanda_y_costes": "Hoja de Ruta del Hidrogeno (MITECO) y literatura sectorial"
+    }
+  },
+  "conjuntos": {
+    "P": [
+      "pl_andalu",
+      "pl_extrem",
+      "pl_castlm",
+      "pl_aragon"
+    ],
+    "J": [
+      "ref_corunya",
+      "ref_bilbao",
+      "ref_tarrag",
+      "ref_castell",
+      "ref_cartag",
+      "ref_huelva",
+      "ref_algecir",
+      "ref_puertoll"
+    ],
+    "K": [
+      "k1",
+      "k2",
+      "k3",
+      "k4",
+      "k5",
+      "k6",
+      "k7",
+      "k8",
+      "k9",
+      "k10",
+      "k11",
+      "k12",
+      "k13",
+      "k14",
+      "k15",
+      "k16"
+    ],
+    "M": [
+      "comprimido",
+      "liquido",
+      "amoniaco"
+    ]
+  },
+  "plantas": {
+    "pl_andalu": {
+      "nombre": "Planta H2 Andalucia (solar)",
+      "provincia": "Sevilla",
+      "zona_recurso": "solar_alto",
+      "Fijo": 5200.0,
+      "CosteO": 2.6,
+      "Cap": 1300.0,
+      "Ren": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        42.5804,
+        207.9324,
+        490.5521,
+        793.4453,
+        1056.9737,
+        1227.5751,
+        1300.0,
+        1258.6525,
+        1123.8822,
+        942.6548,
+        635.1223,
+        330.8945,
+        107.1121,
+        7.4357,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "pl_extrem": {
+      "nombre": "Planta H2 Extremadura (solar)",
+      "provincia": "Badajoz",
+      "zona_recurso": "solar_alto",
+      "Fijo": 5200.0,
+      "CosteO": 2.6,
+      "Cap": 1300.0,
+      "Ren": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        59.0376,
+        246.7309,
+        529.8523,
+        846.9102,
+        1092.2912,
+        1237.3356,
+        1300.0,
+        1249.3204,
+        1133.9721,
+        926.7132,
+        627.3666,
+        327.611,
+        108.2311,
+        8.2489,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "pl_castlm": {
+      "nombre": "Planta H2 Castilla-LM (solar)",
+      "provincia": "Ciudad Real",
+      "zona_recurso": "solar_alto",
+      "Fijo": 5200.0,
+      "CosteO": 2.6,
+      "Cap": 1300.0,
+      "Ren": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.1594,
+        74.783,
+        280.6621,
+        586.5888,
+        887.6487,
+        1128.2971,
+        1256.9529,
+        1300.0,
+        1261.7929,
+        1120.1946,
+        873.2233,
+        576.1001,
+        285.7716,
+        86.8761,
+        3.7075,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "pl_aragon": {
+      "nombre": "Planta H2 Aragon (eolico/solar)",
+      "provincia": "Zaragoza",
+      "zona_recurso": "mixto",
+      "Fijo": 5500.0,
+      "CosteO": 2.8,
+      "Cap": 1250.0,
+      "Ren": [
+        341.9719,
+        354.702,
+        352.513,
+        349.9487,
+        355.736,
+        342.4952,
+        339.9678,
+        432.1466,
+        540.0024,
+        632.5513,
+        723.47,
+        742.0075,
+        748.3841,
+        784.0871,
+        749.0888,
+        676.5364,
+        653.1958,
+        570.7949,
+        462.8282,
+        359.0744,
+        233.6965,
+        269.0126,
+        299.1936,
+        316.4991
+      ]
+    }
+  },
+  "clientes": {
+    "ref_corunya": {
+      "nombre": "Refineria A Coruna (Repsol)",
+      "provincia": "A Coruna",
+      "tipo": "refineria",
+      "Dem": 2800.0
+    },
+    "ref_bilbao": {
+      "nombre": "Refineria Petronor (Muskiz)",
+      "provincia": "Vizcaya",
+      "tipo": "refineria",
+      "Dem": 2800.0
+    },
+    "ref_tarrag": {
+      "nombre": "Refineria Tarragona (Repsol)",
+      "provincia": "Tarragona",
+      "tipo": "refineria",
+      "Dem": 2800.0
+    },
+    "ref_castell": {
+      "nombre": "Refineria Castellon (BP)",
+      "provincia": "Castellon",
+      "tipo": "refineria",
+      "Dem": 2800.0
+    },
+    "ref_cartag": {
+      "nombre": "Refineria Cartagena (Repsol)",
+      "provincia": "Murcia",
+      "tipo": "refineria",
+      "Dem": 2800.0
+    },
+    "ref_huelva": {
+      "nombre": "Refineria La Rabida (Moeve)",
+      "provincia": "Huelva",
+      "tipo": "refineria",
+      "Dem": 2800.0
+    },
+    "ref_algecir": {
+      "nombre": "Refineria San Roque (Moeve)",
+      "provincia": "Cadiz",
+      "tipo": "refineria",
+      "Dem": 2800.0
+    },
+    "ref_puertoll": {
+      "nombre": "Refineria Puertollano (Repsol)",
+      "provincia": "Ciudad Real",
+      "tipo": "refineria",
+      "Dem": 2800.0
+    }
+  },
+  "modos": {
+    "comprimido": {
+      "CapV": 1100.0,
+      "Efi": 0.94,
+      "coste_por_km": 1.05
+    },
+    "liquido": {
+      "CapV": 3500.0,
+      "Efi": 0.82,
+      "coste_por_km": 1.85
+    },
+    "amoniaco": {
+      "CapV": 8000.0,
+      "Efi": 0.72,
+      "coste_por_km": 1.55
+    }
+  },
+  "coordenadas": {
+    "pl_andalu": [
+      37.3886,
+      -5.9953
+    ],
+    "pl_extrem": [
+      39.0406,
+      -5.2338
+    ],
+    "pl_castlm": [
+      39.3912,
+      -3.2087
+    ],
+    "pl_aragon": [
+      41.6916,
+      -0.9101
+    ],
+    "ref_corunya": [
+      43.3466,
+      -8.4127
+    ],
+    "ref_bilbao": [
+      43.323,
+      -3.1243
+    ],
+    "ref_tarrag": [
+      41.1172,
+      1.2546
+    ],
+    "ref_castell": [
+      39.986,
+      -0.0377
+    ],
+    "ref_cartag": [
+      37.6155,
+      -0.9875
+    ],
+    "ref_huelva": [
+      37.2277,
+      -6.8954
+    ],
+    "ref_algecir": [
+      36.2101,
+      -5.3868
+    ],
+    "ref_puertoll": [
+      38.6852,
+      -4.1112
+    ]
+  },
+  "matriz_distancias": {
+    "_comentario": "km reales por carretera (OSRM/OSM) o haversine si es prueba.",
+    "unidad": "km",
+    "valores": {
+      "pl_andalu": {
+        "pl_andalu": 0.0,
+        "pl_extrem": 301.745,
+        "pl_castlm": 404.716,
+        "pl_aragon": 844.655,
+        "ref_corunya": 917.724,
+        "ref_bilbao": 877.494,
+        "ref_tarrag": 907.917,
+        "ref_castell": 725.291,
+        "ref_cartag": 531.206,
+        "ref_huelva": 93.53,
+        "ref_algecir": 190.924,
+        "ref_puertoll": 288.115
+      },
+      "pl_extrem": {
+        "pl_andalu": 302.658,
+        "pl_extrem": 0.0,
+        "pl_castlm": 237.668,
+        "pl_aragon": 577.179,
+        "ref_corunya": 797.674,
+        "ref_bilbao": 680.24,
+        "ref_tarrag": 741.573,
+        "ref_castell": 558.946,
+        "ref_cartag": 544.31,
+        "ref_huelva": 389.548,
+        "ref_algecir": 438.52,
+        "ref_puertoll": 167.005
+      },
+      "pl_castlm": {
+        "pl_andalu": 405.384,
+        "pl_extrem": 235.44,
+        "pl_castlm": 0.0,
+        "pl_aragon": 460.919,
+        "ref_corunya": 741.457,
+        "ref_bilbao": 564.967,
+        "ref_tarrag": 544.29,
+        "ref_castell": 361.664,
+        "ref_cartag": 347.027,
+        "ref_huelva": 496.798,
+        "ref_algecir": 521.997,
+        "ref_puertoll": 134.633
+      },
+      "pl_aragon": {
+        "pl_andalu": 845.317,
+        "pl_extrem": 577.344,
+        "pl_castlm": 464.293,
+        "pl_aragon": 0.0,
+        "ref_corunya": 776.618,
+        "ref_bilbao": 323.995,
+        "ref_tarrag": 235.618,
+        "ref_castell": 324.123,
+        "ref_cartag": 568.915,
+        "ref_huelva": 932.207,
+        "ref_algecir": 956.484,
+        "ref_puertoll": 550.966
+      },
+      "ref_corunya": {
+        "pl_andalu": 919.828,
+        "pl_extrem": 799.286,
+        "pl_castlm": 745.812,
+        "pl_aragon": 784.244,
+        "ref_corunya": 0.0,
+        "ref_bilbao": 523.061,
+        "ref_tarrag": 1009.819,
+        "ref_castell": 1016.538,
+        "ref_cartag": 1039.351,
+        "ref_huelva": 958.224,
+        "ref_algecir": 1106.473,
+        "ref_puertoll": 815.118
+      },
+      "ref_bilbao": {
+        "pl_andalu": 877.675,
+        "pl_extrem": 677.95,
+        "pl_castlm": 565.874,
+        "pl_aragon": 323.814,
+        "ref_corunya": 521.782,
+        "ref_bilbao": 0.0,
+        "ref_tarrag": 549.389,
+        "ref_castell": 632.663,
+        "ref_cartag": 850.193,
+        "ref_huelva": 964.565,
+        "ref_algecir": 1064.32,
+        "ref_puertoll": 652.547
+      },
+      "ref_tarrag": {
+        "pl_andalu": 908.479,
+        "pl_extrem": 741.247,
+        "pl_castlm": 543.226,
+        "pl_aragon": 234.744,
+        "ref_corunya": 1002.417,
+        "ref_bilbao": 549.795,
+        "ref_tarrag": 0.0,
+        "ref_castell": 189.055,
+        "ref_cartag": 532.259,
+        "ref_huelva": 999.893,
+        "ref_algecir": 987.934,
+        "ref_puertoll": 640.439
+      },
+      "ref_castell": {
+        "pl_andalu": 725.066,
+        "pl_extrem": 557.834,
+        "pl_castlm": 359.813,
+        "pl_aragon": 323.3,
+        "ref_corunya": 1013.604,
+        "ref_bilbao": 632.701,
+        "ref_tarrag": 188.485,
+        "ref_castell": 0.0,
+        "ref_cartag": 348.846,
+        "ref_huelva": 816.48,
+        "ref_algecir": 804.522,
+        "ref_puertoll": 457.027
+      },
+      "ref_cartag": {
+        "pl_andalu": 530.571,
+        "pl_extrem": 545.568,
+        "pl_castlm": 347.546,
+        "pl_aragon": 570.692,
+        "ref_corunya": 1038.047,
+        "ref_bilbao": 850.893,
+        "ref_tarrag": 532.334,
+        "ref_castell": 349.708,
+        "ref_cartag": 0.0,
+        "ref_huelva": 623.127,
+        "ref_algecir": 518.591,
+        "ref_puertoll": 444.76
+      },
+      "ref_huelva": {
+        "pl_andalu": 93.452,
+        "pl_extrem": 389.591,
+        "pl_castlm": 496.23,
+        "pl_aragon": 932.502,
+        "ref_corunya": 957.256,
+        "ref_bilbao": 965.341,
+        "ref_tarrag": 999.431,
+        "ref_castell": 816.805,
+        "ref_cartag": 622.573,
+        "ref_huelva": 0.0,
+        "ref_algecir": 278.781,
+        "ref_puertoll": 379.63
+      },
+      "ref_algecir": {
+        "pl_andalu": 188.43,
+        "pl_extrem": 439.204,
+        "pl_castlm": 522.413,
+        "pl_aragon": 957.119,
+        "ref_corunya": 1104.292,
+        "ref_bilbao": 1064.062,
+        "ref_tarrag": 989.187,
+        "ref_castell": 806.561,
+        "ref_cartag": 518.332,
+        "ref_huelva": 280.126,
+        "ref_algecir": 0.0,
+        "ref_puertoll": 422.522
+      },
+      "ref_puertoll": {
+        "pl_andalu": 287.187,
+        "pl_extrem": 167.279,
+        "pl_castlm": 136.685,
+        "pl_aragon": 550.87,
+        "ref_corunya": 814.417,
+        "ref_bilbao": 654.918,
+        "ref_tarrag": 640.59,
+        "ref_castell": 457.964,
+        "ref_cartag": 443.327,
+        "ref_huelva": 378.6,
+        "ref_algecir": 420.841,
+        "ref_puertoll": 0.0
+      }
+    }
+  }
+}
