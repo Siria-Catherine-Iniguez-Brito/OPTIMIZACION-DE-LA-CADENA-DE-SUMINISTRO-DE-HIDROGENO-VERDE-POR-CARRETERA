@@ -1,0 +1,42 @@
+\begin{table}[H]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.25}
+    \begin{tabular}{lllrrrr}
+        \hline
+        \textbf{Instancia} & \textbf{Configuración} & \textbf{Factibles} & \textbf{LCOH medio} & \textbf{Desv. típica} & \textbf{LCOH mejor} & \textbf{t medio (s)} \\
+        \hline
+        small & N=20\_G=50 & 11/20 & 4,7136 & 0,0721 & 4,5892 & 0,2 \\
+        small & N=20\_G=100 & 11/20 & 4,6814 & 0,0541 & 4,5892 & 0,5 \\
+        small & N=20\_G=200 & 11/20 & 4,6555 & 0,0380 & 4,5892 & 1,0 \\
+        small & N=40\_G=50 & 12/20 & 4,6828 & 0,0399 & 4,6046 & 0,5 \\
+        small & N=40\_G=100 & 12/20 & 4,6348 & 0,0312 & 4,6046 & 0,9 \\
+        small & N=40\_G=200 & 12/20 & 4,6218 & 0,0277 & 4,5892 & 1,9 \\
+        small & N=80\_G=50 & 15/20 & 4,6239 & 0,0349 & 4,5892 & 0,9 \\
+        small & N=80\_G=100 & 15/20 & 4,6106 & 0,0249 & 4,5892 & 1,9 \\
+        \textbf{small} & \textbf{N=80\_G=200} & \textbf{15/20} & \textbf{4,6101} & \textbf{0,0233} & \textbf{4,5892} & \textbf{3,9} \\
+        \hline
+        medium & N=20\_G=50 & 16/20 & 4,9829 & 0,1269 & 4,7921 & 0,4 \\
+        medium & N=20\_G=100 & 18/20 & 4,8537 & 0,0785 & 4,7227 & 0,9 \\
+        medium & N=20\_G=200 & 18/20 & 4,7376 & 0,1023 & 4,5325 & 1,8 \\
+        medium & N=40\_G=50 & 20/20 & 4,8624 & 0,1277 & 4,6784 & 0,9 \\
+        medium & N=40\_G=100 & 20/20 & 4,7053 & 0,1152 & 4,5202 & 1,7 \\
+        medium & N=40\_G=200 & 20/20 & 4,6161 & 0,1231 & 4,4428 & 3,5 \\
+        medium & N=80\_G=50 & 20/20 & 4,7772 & 0,0737 & 4,6620 & 1,8 \\
+        medium & N=80\_G=100 & 20/20 & 4,6721 & 0,0927 & 4,5260 & 3,5 \\
+        \textbf{medium} & \textbf{N=80\_G=200} & \textbf{20/20} & \textbf{4,5982} & \textbf{0,1230} & \textbf{4,3881} & \textbf{7,1} \\
+        \hline
+        large & N=20\_G=50 & 19/20 & 5,2850 & 0,1158 & 5,1039 & 0,7 \\
+        large & N=20\_G=100 & 20/20 & 5,0933 & 0,0945 & 4,9403 & 1,4 \\
+        large & N=20\_G=200 & 20/20 & 4,8831 & 0,1141 & 4,6818 & 2,7 \\
+        large & N=40\_G=50 & 18/20 & 5,1682 & 0,1015 & 4,9823 & 1,4 \\
+        large & N=40\_G=100 & 20/20 & 4,9651 & 0,0846 & 4,7800 & 2,7 \\
+        large & N=40\_G=200 & 20/20 & 4,7803 & 0,0863 & 4,6393 & 5,4 \\
+        large & N=80\_G=50 & 20/20 & 5,0556 & 0,1061 & 4,8744 & 2,8 \\
+        large & N=80\_G=100 & 20/20 & 4,8718 & 0,0871 & 4,7361 & 5,6 \\
+        \textbf{large} & \textbf{N=80\_G=200} & \textbf{20/20} & \textbf{4,6711} & \textbf{0,1103} & \textbf{4,4689} & \textbf{11,1} \\
+        \hline
+    \end{tabular}
+    \caption{Resultados de la calibracion combinada de tamano de poblacion y generaciones. El LCOH medio se calcula sobre las ejecuciones factibles; la columna \textbf{Factibles} indica cuántas de las ejecuciones totales alcanzaron una solución factible. En negrita, la mejor configuración de cada instancia.}
+    \label{tab:calib_e06_ng}
+\end{table}

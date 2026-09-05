@@ -1,0 +1,4 @@
+exp_id,id_config,n_instancias,veces_mejor,veces_mejor_txt,mejor_en,tasa_factibilidad_global,rank_medio,tiempo_medio_s,n_instancias_sin_factibles,decision
+E07_TORNEO,k=5,3,1,1/3,medium,1.0,1.6666666666666667,14.918078112433315,0,<- mas veces mejor
+E07_TORNEO,k=2,3,1,1/3,small,1.0,2.0,14.96823395135001,0,
+E07_TORNEO,k=3,3,1,1/3,large,1.0,2.3333333333333335,14.947886345816654,0,
