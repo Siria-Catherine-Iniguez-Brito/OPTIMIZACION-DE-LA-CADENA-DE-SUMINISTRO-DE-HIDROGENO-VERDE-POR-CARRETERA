@@ -1,0 +1,27 @@
+\begin{table}[H]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.25}
+    \begin{tabular}{lllrrrr}
+        \hline
+        \textbf{Instancia} & \textbf{Configuración} & \textbf{Factibles} & \textbf{LCOH medio} & \textbf{Desv. típica} & \textbf{LCOH mejor} & \textbf{t medio (s)} \\
+        \hline
+        small & G=50 & 20/20 & 4,6109 & 0,0189 & 4,5892 & 1,8 \\
+        \textbf{small} & \textbf{G=100} & \textbf{20/20} & \textbf{4,6078} & \textbf{0,0134} & \textbf{4,5892} & \textbf{3,8} \\
+        small & G=200 & 20/20 & 4,6078 & 0,0134 & 4,5892 & 7,3 \\
+        small & G=400 & 20/20 & 4,6078 & 0,0134 & 4,5892 & 14,6 \\
+        \hline
+        medium & G=50 & 20/20 & 4,7348 & 0,0768 & 4,5825 & 3,4 \\
+        medium & G=100 & 20/20 & 4,6022 & 0,0881 & 4,4575 & 6,7 \\
+        medium & G=200 & 20/20 & 4,5442 & 0,0929 & 4,4093 & 13,4 \\
+        \textbf{medium} & \textbf{G=400} & \textbf{20/20} & \textbf{4,5293} & \textbf{0,0972} & \textbf{4,4093} & \textbf{26,7} \\
+        \hline
+        large & G=50 & 20/20 & 4,9724 & 0,0720 & 4,8427 & 5,2 \\
+        large & G=100 & 20/20 & 4,7841 & 0,0699 & 4,6498 & 10,4 \\
+        large & G=200 & 20/20 & 4,6129 & 0,0839 & 4,4530 & 20,9 \\
+        \textbf{large} & \textbf{G=400} & \textbf{20/20} & \textbf{4,5466} & \textbf{0,1043} & \textbf{4,3768} & \textbf{41,4} \\
+        \hline
+    \end{tabular}
+    \caption{Resultados de la calibracion del numero de generaciones. El LCOH medio se calcula sobre las ejecuciones factibles; la columna \textbf{Factibles} indica cuántas de las ejecuciones totales alcanzaron una solución factible. En negrita, la mejor configuración de cada instancia.}
+    \label{tab:calib_e05_g}
+\end{table}

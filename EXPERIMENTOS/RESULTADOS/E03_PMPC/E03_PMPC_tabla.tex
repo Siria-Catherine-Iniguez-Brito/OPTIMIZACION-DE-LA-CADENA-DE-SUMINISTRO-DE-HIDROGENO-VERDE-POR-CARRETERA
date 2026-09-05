@@ -1,0 +1,42 @@
+\begin{table}[H]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.25}
+    \begin{tabular}{lllrrrr}
+        \hline
+        \textbf{Instancia} & \textbf{Configuración} & \textbf{Factibles} & \textbf{LCOH medio} & \textbf{Desv. típica} & \textbf{LCOH mejor} & \textbf{t medio (s)} \\
+        \hline
+        small & PM=0.05\_PC=0.6 & 10/20 & 4,6762 & 0,0750 & 4,5892 & 0,6 \\
+        small & PM=0.05\_PC=0.8 & 9/20 & 4,6945 & 0,0919 & 4,6046 & 0,6 \\
+        small & PM=0.05\_PC=1 & 8/20 & 4,7982 & 0,1308 & 4,6503 & 0,6 \\
+        small & PM=0.1\_PC=0.6 & 14/20 & 4,6480 & 0,0428 & 4,5892 & 0,6 \\
+        small & PM=0.1\_PC=0.8 & 10/20 & 4,6468 & 0,0505 & 4,5892 & 0,6 \\
+        small & PM=0.1\_PC=1 & 14/20 & 4,7104 & 0,0758 & 4,6084 & 0,6 \\
+        small & PM=0.2\_PC=0.6 & 12/20 & 4,6348 & 0,0312 & 4,6046 & 0,6 \\
+        \textbf{small} & \textbf{PM=0.2\_PC=0.8} & \textbf{14/20} & \textbf{4,6330} & \textbf{0,0350} & \textbf{4,5892} & \textbf{0,6} \\
+        small & PM=0.2\_PC=1 & 11/20 & 4,6764 & 0,0458 & 4,6149 & 0,6 \\
+        \hline
+        medium & PM=0.05\_PC=0.6 & 18/20 & 4,8171 & 0,1097 & 4,5682 & 1,1 \\
+        medium & PM=0.05\_PC=0.8 & 17/20 & 4,9341 & 0,1460 & 4,7264 & 1,1 \\
+        medium & PM=0.05\_PC=1 & 11/20 & 5,0306 & 0,1804 & 4,7340 & 1,1 \\
+        medium & PM=0.1\_PC=0.6 & 19/20 & 4,7930 & 0,1159 & 4,5580 & 1,0 \\
+        medium & PM=0.1\_PC=0.8 & 19/20 & 4,8761 & 0,1639 & 4,5815 & 1,1 \\
+        medium & PM=0.1\_PC=1 & 14/20 & 5,0410 & 0,1334 & 4,8658 & 1,1 \\
+        \textbf{medium} & \textbf{PM=0.2\_PC=0.6} & \textbf{20/20} & \textbf{4,7053} & \textbf{0,1152} & \textbf{4,5202} & \textbf{1,1} \\
+        medium & PM=0.2\_PC=0.8 & 20/20 & 4,8123 & 0,1005 & 4,5757 & 1,1 \\
+        medium & PM=0.2\_PC=1 & 18/20 & 4,9505 & 0,1108 & 4,7035 & 1,1 \\
+        \hline
+        large & PM=0.05\_PC=0.6 & 20/20 & 5,1646 & 0,0811 & 4,9717 & 1,7 \\
+        large & PM=0.05\_PC=0.8 & 18/20 & 5,2661 & 0,1400 & 4,9721 & 1,8 \\
+        large & PM=0.05\_PC=1 & 5/20 & 5,3281 & 0,0921 & 5,2404 & 1,9 \\
+        large & PM=0.1\_PC=0.6 & 20/20 & 5,0325 & 0,0931 & 4,8753 & 1,7 \\
+        large & PM=0.1\_PC=0.8 & 18/20 & 5,1912 & 0,1138 & 4,8937 & 1,8 \\
+        large & PM=0.1\_PC=1 & 10/20 & 5,3128 & 0,1261 & 5,0812 & 1,9 \\
+        \textbf{large} & \textbf{PM=0.2\_PC=0.6} & \textbf{20/20} & \textbf{4,9651} & \textbf{0,0846} & \textbf{4,7800} & \textbf{1,7} \\
+        large & PM=0.2\_PC=0.8 & 20/20 & 5,0822 & 0,1005 & 4,9232 & 1,8 \\
+        large & PM=0.2\_PC=1 & 13/20 & 5,2754 & 0,1009 & 5,0413 & 1,9 \\
+        \hline
+    \end{tabular}
+    \caption{Resultados de la calibracion combinada de pm y pc. El LCOH medio se calcula sobre las ejecuciones factibles; la columna \textbf{Factibles} indica cuántas de las ejecuciones totales alcanzaron una solución factible. En negrita, la mejor configuración de cada instancia.}
+    \label{tab:calib_e03_pmpc}
+\end{table}

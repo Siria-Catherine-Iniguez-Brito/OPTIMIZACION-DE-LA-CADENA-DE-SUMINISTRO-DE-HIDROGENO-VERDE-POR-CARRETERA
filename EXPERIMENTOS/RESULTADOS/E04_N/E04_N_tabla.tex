@@ -1,0 +1,27 @@
+\begin{table}[H]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.25}
+    \begin{tabular}{lllrrrr}
+        \hline
+        \textbf{Instancia} & \textbf{Configuración} & \textbf{Factibles} & \textbf{LCOH medio} & \textbf{Desv. típica} & \textbf{LCOH mejor} & \textbf{t medio (s)} \\
+        \hline
+        small & N=50 & 14/20 & 4,6160 & 0,0275 & 4,5892 & 0,8 \\
+        small & N=100 & 19/20 & 4,6107 & 0,0201 & 4,5892 & 1,6 \\
+        small & N=150 & 20/20 & 4,6078 & 0,0134 & 4,5892 & 2,5 \\
+        \textbf{small} & \textbf{N=200} & \textbf{20/20} & \textbf{4,6034} & \textbf{0,0168} & \textbf{4,5892} & \textbf{3,3} \\
+        \hline
+        medium & N=50 & 20/20 & 4,6959 & 0,1266 & 4,4025 & 1,4 \\
+        medium & N=100 & 20/20 & 4,6334 & 0,1137 & 4,3949 & 2,9 \\
+        medium & N=150 & 20/20 & 4,6022 & 0,0881 & 4,4575 & 4,5 \\
+        \textbf{medium} & \textbf{N=200} & \textbf{20/20} & \textbf{4,5934} & \textbf{0,1114} & \textbf{4,4266} & \textbf{6,0} \\
+        \hline
+        large & N=50 & 20/20 & 4,9234 & 0,0993 & 4,6307 & 2,2 \\
+        large & N=100 & 20/20 & 4,8280 & 0,0721 & 4,7240 & 4,5 \\
+        \textbf{large} & \textbf{N=150} & \textbf{20/20} & \textbf{4,7841} & \textbf{0,0699} & \textbf{4,6498} & \textbf{6,9} \\
+        large & N=200 & 20/20 & 4,8134 & 0,0812 & 4,6788 & 9,1 \\
+        \hline
+    \end{tabular}
+    \caption{Resultados de la calibracion del tamano de la poblacion. El LCOH medio se calcula sobre las ejecuciones factibles; la columna \textbf{Factibles} indica cuántas de las ejecuciones totales alcanzaron una solución factible. En negrita, la mejor configuración de cada instancia.}
+    \label{tab:calib_e04_n}
+\end{table}
