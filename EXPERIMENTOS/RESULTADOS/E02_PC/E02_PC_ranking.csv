@@ -1,0 +1,5 @@
+exp_id,id_config,n_instancias,veces_mejor,veces_mejor_txt,mejor_en,tasa_factibilidad_global,rank_medio,tiempo_medio_s,n_instancias_sin_factibles,decision
+E02_PC,PC=0.6,3,3,3/3,"large, medium, small",0.8833333333333333,1.0,2.17356351013334,0,<- mas veces mejor
+E02_PC,PC=0.9,3,0,0/3,-,0.8333333333333334,2.6666666666666665,2.521469162266696,0,
+E02_PC,PC=0.75,3,0,0/3,-,0.8166666666666668,3.0,2.3997627726333346,0,
+E02_PC,PC=1,3,0,0/3,-,0.6333333333333333,3.3333333333333335,2.5087173530833677,0,

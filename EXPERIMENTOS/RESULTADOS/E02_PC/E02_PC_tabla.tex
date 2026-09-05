@@ -1,0 +1,27 @@
+\begin{table}[H]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.25}
+    \begin{tabular}{lllrrrr}
+        \hline
+        \textbf{Instancia} & \textbf{Configuración} & \textbf{Factibles} & \textbf{LCOH medio} & \textbf{Desv. típica} & \textbf{LCOH mejor} & \textbf{t medio (s)} \\
+        \hline
+        \textbf{small} & \textbf{PC=0.6} & \textbf{14/20} & \textbf{4,6480} & \textbf{0,0428} & \textbf{4,5892} & \textbf{1,2} \\
+        small & PC=0.75 & 12/20 & 4,6520 & 0,0601 & 4,5892 & 1,1 \\
+        small & PC=0.9 & 13/20 & 4,6940 & 0,0585 & 4,6149 & 1,2 \\
+        small & PC=1 & 14/20 & 4,7104 & 0,0758 & 4,6084 & 1,1 \\
+        \hline
+        \textbf{medium} & \textbf{PC=0.6} & \textbf{19/20} & \textbf{4,7930} & \textbf{0,1159} & \textbf{4,5580} & \textbf{2,1} \\
+        medium & PC=0.75 & 18/20 & 4,8470 & 0,0991 & 4,6375 & 2,4 \\
+        medium & PC=0.9 & 19/20 & 4,9292 & 0,1432 & 4,7055 & 2,4 \\
+        medium & PC=1 & 14/20 & 5,0410 & 0,1334 & 4,8658 & 2,3 \\
+        \hline
+        \textbf{large} & \textbf{PC=0.6} & \textbf{20/20} & \textbf{5,0325} & \textbf{0,0931} & \textbf{4,8753} & \textbf{3,3} \\
+        large & PC=0.75 & 19/20 & 5,1342 & 0,0927 & 4,8712 & 3,8 \\
+        large & PC=0.9 & 18/20 & 5,2332 & 0,1352 & 4,9644 & 4,0 \\
+        large & PC=1 & 10/20 & 5,3128 & 0,1261 & 5,0812 & 4,2 \\
+        \hline
+    \end{tabular}
+    \caption{Resultados de la calibracion de la probabilidad de cruce. El LCOH medio se calcula sobre las ejecuciones factibles; la columna \textbf{Factibles} indica cuántas de las ejecuciones totales alcanzaron una solución factible. En negrita, la mejor configuración de cada instancia.}
+    \label{tab:calib_e02_pc}
+\end{table}

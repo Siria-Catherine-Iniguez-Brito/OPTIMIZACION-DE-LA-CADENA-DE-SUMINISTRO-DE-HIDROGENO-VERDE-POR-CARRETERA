@@ -1,0 +1,30 @@
+\begin{table}[H]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.25}
+    \begin{tabular}{lllrrrr}
+        \hline
+        \textbf{Instancia} & \textbf{Configuración} & \textbf{Factibles} & \textbf{LCOH medio} & \textbf{Desv. típica} & \textbf{LCOH mejor} & \textbf{t medio (s)} \\
+        \hline
+        small & PM=0.001 & 5/20 & 5,0045 & 0,0962 & 4,8817 & 1,0 \\
+        small & PM=0.01 & 6/20 & 4,9175 & 0,1163 & 4,7313 & 1,3 \\
+        small & PM=0.05 & 8/20 & 4,7982 & 0,1308 & 4,6503 & 1,3 \\
+        \textbf{small} & \textbf{PM=0.1} & \textbf{14/20} & \textbf{4,7104} & \textbf{0,0758} & \textbf{4,6084} & \textbf{1,1} \\
+        small & PM=0.2 & 11/20 & 4,6764 & 0,0458 & 4,6149 & 1,2 \\
+        \hline
+        medium & PM=0.001 & 4/20 & 5,2281 & 0,1074 & 5,1227 & 2,0 \\
+        medium & PM=0.01 & 7/20 & 5,1849 & 0,1558 & 4,9155 & 2,1 \\
+        medium & PM=0.05 & 11/20 & 5,0306 & 0,1804 & 4,7340 & 2,2 \\
+        medium & PM=0.1 & 14/20 & 5,0410 & 0,1334 & 4,8658 & 2,6 \\
+        \textbf{medium} & \textbf{PM=0.2} & \textbf{18/20} & \textbf{4,9505} & \textbf{0,1108} & \textbf{4,7035} & \textbf{2,3} \\
+        \hline
+        large & PM=0.001 & 3/20 & 5,4406 & 0,0642 & 5,3926 & 3,4 \\
+        large & PM=0.01 & 2/20 & 5,3475 & 0,0573 & 5,3069 & 3,4 \\
+        large & PM=0.05 & 5/20 & 5,3281 & 0,0921 & 5,2404 & 3,5 \\
+        large & PM=0.1 & 10/20 & 5,3128 & 0,1261 & 5,0812 & 3,4 \\
+        \textbf{large} & \textbf{PM=0.2} & \textbf{13/20} & \textbf{5,2754} & \textbf{0,1009} & \textbf{5,0413} & \textbf{3,3} \\
+        \hline
+    \end{tabular}
+    \caption{Resultados de la calibracion de la probabilidad de mutacion. El LCOH medio se calcula sobre las ejecuciones factibles; la columna \textbf{Factibles} indica cuántas de las ejecuciones totales alcanzaron una solución factible. En negrita, la mejor configuración de cada instancia.}
+    \label{tab:calib_e01_pm}
+\end{table}
